@@ -7,7 +7,7 @@
 
 /* Profile Header */
 .profile-header {
-  background: linear-gradient(135deg, #777 0%, #000 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   border-radius: 20px;
   padding: 40px;
   margin-bottom: 30px;
@@ -129,20 +129,6 @@
 
 .contact-item:hover {
   background: #e9ecef;
-}
-
-.contact-item .fab {
-  font-size: 1.5rem;
-  min-width: 35px;
-  text-align: center;
-}
-
-.contact-item .fa-linkedin {
-  color: #0077b5;
-}
-
-.contact-item .fa-github {
-  color: #333333;
 }
 
 .contact-icon {

@@ -10,7 +10,7 @@
   text-align: center;
   margin-bottom: 50px;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #777 0%, #000 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   border-radius: 20px;
   color: white;
 }
@@ -228,120 +228,6 @@
   font-size: 1.2rem;
 }
 
-/* Opportunity Section */
-.opportunity-section {
-  margin: 40px 0;
-}
-
-.opportunity-card {
-  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-  border-radius: 20px;
-  padding: 40px;
-  text-align: center;
-  border: 2px dashed #667eea;
-}
-
-.opportunity-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.opportunity-card h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.opportunity-card p {
-  color: #666;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto 25px;
-}
-
-.opportunity-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-contact, .btn-skills {
-  padding: 12px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.btn-contact {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-}
-
-.btn-contact:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-}
-
-.btn-skills {
-  background: transparent;
-  color: #667eea;
-  border: 2px solid #667eea;
-}
-
-.btn-skills:hover {
-  background: #667eea;
-  color: white;
-  transform: translateY(-3px);
-}
-
-/* Future Goals */
-.future-goals {
-  margin-top: 40px;
-}
-
-.future-goals h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 25px;
-}
-
-.goals-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.goal-card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-}
-
-.goal-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.goal-icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.goal-card p {
-  color: #555;
-  line-height: 1.5;
-  margin: 0;
-}
-/* Add these new styles to your existing work page CSS */
-
 /* Task Categories */
 .task-category {
   margin-bottom: 20px;
@@ -361,29 +247,7 @@
 
 .task-category li {
   padding: 5px 0;
-}
-
-/* Equipment Grid */
-.equipment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.equipment-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  background: #f8f9fa;
-  border-radius: 10px;
-  font-weight: 500;
-  color: #555;
-}
-
-.equipment-icon {
-  font-size: 1.3rem;
+  padding-left:25px;
 }
 
 /* Skills Highlight Section */
@@ -440,17 +304,7 @@
     padding-left: 8px;
   }
   
-  .equipment-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
   .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .equipment-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -476,20 +330,6 @@
   
   .learning-outcomes {
     grid-template-columns: 1fr;
-  }
-  
-  .opportunity-card {
-    padding: 25px;
-  }
-  
-  .opportunity-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn-contact, .btn-skills {
-    width: 100%;
-    text-align: center;
   }
 }
 
