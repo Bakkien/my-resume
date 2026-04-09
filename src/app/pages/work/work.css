@@ -1,0 +1,520 @@
+.work-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Header Section */
+.work-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #777 0%, #000 100%);
+  border-radius: 20px;
+  color: white;
+}
+
+.work-title {
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.title-icon {
+  font-size: 2.5rem;
+}
+
+.work-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin: 0;
+}
+
+/* Work Card */
+.work-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #667eea, #764ba2);
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Work Period */
+.work-period {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.period-badge {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.period-date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Company Header */
+.company-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.company-icon {
+  font-size: 3rem;
+  background: #f0f2f5;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.company-location {
+  color: #888;
+  margin: 5px 0;
+}
+
+.company-industry {
+  color: #667eea;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+/* Position Title */
+.position-title {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.position-title h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.position-type {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Work Details */
+.work-details {
+  margin-top: 20px;
+}
+
+.detail-section {
+  margin-bottom: 25px;
+}
+
+.detail-section h4 {
+  font-size: 1.1rem;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail-section li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #555;
+  line-height: 1.5;
+}
+
+.detail-section li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Skills Tags */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  padding: 6px 15px;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Learning Outcomes */
+.learning-outcomes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.outcome-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.outcome-icon {
+  font-size: 1.2rem;
+}
+
+/* Opportunity Section */
+.opportunity-section {
+  margin: 40px 0;
+}
+
+.opportunity-card {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  border: 2px dashed #667eea;
+}
+
+.opportunity-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.opportunity-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.opportunity-card p {
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.opportunity-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-contact, .btn-skills {
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-contact {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.btn-contact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-skills {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-skills:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Future Goals */
+.future-goals {
+  margin-top: 40px;
+}
+
+.future-goals h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.goal-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.goal-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.goal-card p {
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+/* Add these new styles to your existing work page CSS */
+
+/* Task Categories */
+.task-category {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #667eea;
+}
+
+.task-category h5 {
+  font-size: 1rem;
+  color: #764ba2;
+  margin-bottom: 10px;
+}
+
+.task-category ul {
+  margin-left: 20px;
+}
+
+.task-category li {
+  padding: 5px 0;
+}
+
+/* Equipment Grid */
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.equipment-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+.equipment-icon {
+  font-size: 1.3rem;
+}
+
+/* Skills Highlight Section */
+.skills-highlight {
+  margin: 40px 0;
+}
+
+.skills-highlight h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.skill-card h4 {
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsive updates */
+@media (max-width: 768px) {
+  .task-category {
+    padding-left: 8px;
+  }
+  
+  .equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .equipment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .work-title {
+    font-size: 1.8rem;
+  }
+  
+  .company-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .company-name {
+    font-size: 1.4rem;
+  }
+  
+  .work-card {
+    padding: 20px;
+  }
+  
+  .learning-outcomes {
+    grid-template-columns: 1fr;
+  }
+  
+  .opportunity-card {
+    padding: 25px;
+  }
+  
+  .opportunity-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-contact, .btn-skills {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-period {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .detail-section li {
+    font-size: 0.9rem;
+  }
+  
+  .skill-tag {
+    font-size: 0.8rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
